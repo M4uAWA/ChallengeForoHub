@@ -1,0 +1,9 @@
+ALTER TABLE Topico MODIFY mensaje VARCHAR(500) NOT NULL;
+
+ALTER TABLE Topico ADD CONSTRAINT uq_topico_titulo UNIQUE (titulo);
+
+ALTER TABLE Topico ADD CONSTRAINT uq_topico_mensaje UNIQUE (mensaje);
+
+ALTER TABLE Topico MODIFY autor INT NOT NULL;
+
+ALTER TABLE Topico MODIFY curso INT NOT NULL;
