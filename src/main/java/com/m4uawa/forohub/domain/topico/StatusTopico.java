@@ -1,4 +1,4 @@
-package com.m4uawa.forohub.topico;
+package com.m4uawa.forohub.domain.topico;
 
 public enum StatusTopico {
     ABIERTO,

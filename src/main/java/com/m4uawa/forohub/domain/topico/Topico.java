@@ -1,4 +1,4 @@
-package com.m4uawa.forohub.topico;
+package com.m4uawa.forohub.domain.topico;
 
 import java.time.LocalDateTime;
 
@@ -50,7 +50,7 @@ public class Topico {
         }
     }
 
-    public Topico(DTOTopico data) {
+    public Topico(DTORTopico data) {
         this.id = null;
         this.autor = data.autor();
         this.curso = data.curso();
@@ -58,6 +58,25 @@ public class Topico {
         this.status = data.status();
         this.titulo = data.titulo();
         this.mensaje = data.mensaje();
+
+    }
+
+    public void updateData(DTOUTopico data) {
+        if(data.titulo() != null && !data.titulo().equals("")){
+            this.titulo = data.titulo();
+        }
+        if(data.mensaje() != null && !data.mensaje().equals("")){
+            this.mensaje = data.mensaje();
+        }
+        if(data.autor() > 0){
+            this.autor = data.autor();
+        }
+        if(data.curso() > 0){
+            this.curso = data.curso();
+        }
+        if(data.status() != null){
+            this.status = data.status();
+        }
 
     }
 }
