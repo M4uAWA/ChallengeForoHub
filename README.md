@@ -130,5 +130,3 @@ El programa cuenta con manejo de errores y respuestas HTTP apropiadas:
 * `403 Forbidden` -> Intento de acceder sin autenticación válida.
 * `404 Not Found` -> Recurso inexistente.
 ---
-
-¿Quieres que también te lo arme con un **apartado final de "Cómo ejecutar el proyecto"** (instalación, dependencias, comandos Maven, etc.) como si fuera un README de GitHub listo para usar?
